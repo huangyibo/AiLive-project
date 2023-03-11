@@ -1,0 +1,595 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.ailiving.iot:servicehub-service:jar:1.0.0-SNAPSHOT
+[WARNING] 'dependencyManagement.dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: com.ailiving.iot:devicecenter-api:jar -> duplicate declaration of version ${devicecenter-api.version} @ com.ailiving.iot:servicehub:1.0.0-SNAPSHOT, /Users/guke.hbq/IdeaProjects/servicehub/pom.xml, line 114, column 25
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.ailiving.iot:servicehub:pom:1.0.0-SNAPSHOT
+[WARNING] 'dependencyManagement.dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: com.ailiving.iot:devicecenter-api:jar -> duplicate declaration of version ${devicecenter-api.version} @ line 114, column 25
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] servicehub                                                         [pom]
+[INFO] servicehub-dal                                                     [jar]
+[INFO] servicehub-sal                                                     [jar]
+[INFO] servicehub-api                                                     [jar]
+[INFO] servicehub-component                                               [jar]
+[INFO] servicehub-service                                                 [jar]
+[INFO] servicehub-common                                                  [jar]
+[INFO] servicehub-main                                                    [jar]
+[INFO] 
+[INFO] --------------------< com.ailiving.iot:servicehub >---------------------
+[INFO] Building servicehub 1.0.0-SNAPSHOT                                 [1/8]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.0.2:tree (default-cli) @ servicehub ---
+[INFO] com.ailiving.iot:servicehub:pom:1.0.0-SNAPSHOT
+[INFO] +- org.springframework.boot:spring-boot-starter-web-services:jar:2.0.4.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:2.0.4.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot:jar:2.0.4.RELEASE:compile
+[INFO] |  |  |  \- org.springframework:spring-context:jar:5.0.8.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.0.4.RELEASE:compile
+[INFO] |  |  |  +- ch.qos.logback:logback-classic:jar:1.2.3:compile
+[INFO] |  |  |  |  \- ch.qos.logback:logback-core:jar:1.2.3:compile
+[INFO] |  |  |  +- org.apache.logging.log4j:log4j-to-slf4j:jar:2.10.0:compile
+[INFO] |  |  |  |  \- org.apache.logging.log4j:log4j-api:jar:2.10.0:compile
+[INFO] |  |  |  \- org.slf4j:jul-to-slf4j:jar:1.7.25:compile
+[INFO] |  |  +- javax.annotation:javax.annotation-api:jar:1.3.2:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.19:runtime
+[INFO] |  +- org.springframework.boot:spring-boot-starter-web:jar:2.0.4.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-json:jar:2.0.4.RELEASE:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.9.6:compile
+[INFO] |  |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0:compile
+[INFO] |  |  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.9.6:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.9.6:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.6:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.9.6:compile
+[INFO] |  |  +- org.hibernate.validator:hibernate-validator:jar:6.0.11.Final:compile
+[INFO] |  |  |  +- javax.validation:validation-api:jar:2.0.1.Final:compile
+[INFO] |  |  |  +- org.jboss.logging:jboss-logging:jar:3.3.2.Final:compile
+[INFO] |  |  |  \- com.fasterxml:classmate:jar:1.3.4:compile
+[INFO] |  |  +- org.springframework:spring-web:jar:5.0.8.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-webmvc:jar:5.0.8.RELEASE:compile
+[INFO] |  |     \- org.springframework:spring-expression:jar:5.0.8.RELEASE:compile
+[INFO] |  +- org.springframework:spring-oxm:jar:5.0.8.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-beans:jar:5.0.8.RELEASE:compile
+[INFO] |  \- org.springframework.ws:spring-ws-core:jar:3.0.3.RELEASE:compile
+[INFO] |     +- org.springframework.ws:spring-xml:jar:3.0.3.RELEASE:compile
+[INFO] |     +- org.springframework:spring-aop:jar:5.0.8.RELEASE:compile
+[INFO] |     \- commons-io:commons-io:jar:2.5:compile
+[INFO] \- org.springframework.boot:spring-boot-starter-test:jar:2.0.4.RELEASE:test
+[INFO]    +- org.springframework.boot:spring-boot-test:jar:2.0.4.RELEASE:test
+[INFO]    +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.0.4.RELEASE:test
+[INFO]    +- com.jayway.jsonpath:json-path:jar:2.4.0:test
+[INFO]    |  +- net.minidev:json-smart:jar:2.3:test
+[INFO]    |  |  \- net.minidev:accessors-smart:jar:1.2:test
+[INFO]    |  |     \- org.ow2.asm:asm:jar:5.0.4:test
+[INFO]    |  \- org.slf4j:slf4j-api:jar:1.7.25:compile
+[INFO]    +- junit:junit:jar:4.12:test
+[INFO]    +- org.assertj:assertj-core:jar:3.9.1:test
+[INFO]    +- org.mockito:mockito-core:jar:2.15.0:test
+[INFO]    |  +- net.bytebuddy:byte-buddy:jar:1.7.11:test
+[INFO]    |  +- net.bytebuddy:byte-buddy-agent:jar:1.7.11:test
+[INFO]    |  \- org.objenesis:objenesis:jar:2.6:test
+[INFO]    +- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO]    +- org.hamcrest:hamcrest-library:jar:1.3:test
+[INFO]    +- org.skyscreamer:jsonassert:jar:1.5.0:test
+[INFO]    |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO]    +- org.springframework:spring-core:jar:5.0.8.RELEASE:compile
+[INFO]    |  \- org.springframework:spring-jcl:jar:5.0.8.RELEASE:compile
+[INFO]    +- org.springframework:spring-test:jar:5.0.8.RELEASE:test
+[INFO]    \- org.xmlunit:xmlunit-core:jar:2.5.1:test
+[INFO] 
+[INFO] ------------------< com.ailiving.iot:servicehub-dal >-------------------
+[INFO] Building servicehub-dal 1.0.0-SNAPSHOT                             [2/8]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.0.2:tree (default-cli) @ servicehub-dal ---
+[INFO] com.ailiving.iot:servicehub-dal:jar:1.0.0-SNAPSHOT
+[INFO] +- org.mybatis.spring.boot:mybatis-spring-boot-starter:jar:1.1.1:compile
+[INFO] |  \- org.mybatis.spring.boot:mybatis-spring-boot-autoconfigure:jar:1.1.1:compile
+[INFO] |     +- org.mybatis:mybatis:jar:3.4.0:compile
+[INFO] |     +- org.mybatis:mybatis-spring:jar:1.3.0:compile
+[INFO] |     +- org.springframework.boot:spring-boot:jar:2.0.4.RELEASE:compile
+[INFO] |     |  \- org.springframework:spring-context:jar:5.0.8.RELEASE:compile
+[INFO] |     \- org.springframework.boot:spring-boot-starter-jdbc:jar:2.0.4.RELEASE:compile
+[INFO] |        +- com.zaxxer:HikariCP:jar:2.7.9:compile
+[INFO] |        \- org.springframework:spring-jdbc:jar:5.0.8.RELEASE:compile
+[INFO] |           \- org.springframework:spring-tx:jar:5.0.8.RELEASE:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-web-services:jar:2.0.4.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:2.0.4.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.0.4.RELEASE:compile
+[INFO] |  |  |  +- ch.qos.logback:logback-classic:jar:1.2.3:compile
+[INFO] |  |  |  |  \- ch.qos.logback:logback-core:jar:1.2.3:compile
+[INFO] |  |  |  +- org.apache.logging.log4j:log4j-to-slf4j:jar:2.10.0:compile
+[INFO] |  |  |  |  \- org.apache.logging.log4j:log4j-api:jar:2.10.0:compile
+[INFO] |  |  |  \- org.slf4j:jul-to-slf4j:jar:1.7.25:compile
+[INFO] |  |  +- javax.annotation:javax.annotation-api:jar:1.3.2:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.19:runtime
+[INFO] |  +- org.springframework.boot:spring-boot-starter-web:jar:2.0.4.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-json:jar:2.0.4.RELEASE:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.9.6:compile
+[INFO] |  |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0:compile
+[INFO] |  |  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.9.6:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.9.6:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.6:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.9.6:compile
+[INFO] |  |  +- org.hibernate.validator:hibernate-validator:jar:6.0.11.Final:compile
+[INFO] |  |  |  +- javax.validation:validation-api:jar:2.0.1.Final:compile
+[INFO] |  |  |  +- org.jboss.logging:jboss-logging:jar:3.3.2.Final:compile
+[INFO] |  |  |  \- com.fasterxml:classmate:jar:1.3.4:compile
+[INFO] |  |  +- org.springframework:spring-web:jar:5.0.8.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-webmvc:jar:5.0.8.RELEASE:compile
+[INFO] |  |     \- org.springframework:spring-expression:jar:5.0.8.RELEASE:compile
+[INFO] |  +- org.springframework:spring-oxm:jar:5.0.8.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-beans:jar:5.0.8.RELEASE:compile
+[INFO] |  \- org.springframework.ws:spring-ws-core:jar:3.0.3.RELEASE:compile
+[INFO] |     +- org.springframework.ws:spring-xml:jar:3.0.3.RELEASE:compile
+[INFO] |     +- org.springframework:spring-aop:jar:5.0.8.RELEASE:compile
+[INFO] |     \- commons-io:commons-io:jar:2.5:compile
+[INFO] \- org.springframework.boot:spring-boot-starter-test:jar:2.0.4.RELEASE:test
+[INFO]    +- org.springframework.boot:spring-boot-test:jar:2.0.4.RELEASE:test
+[INFO]    +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.0.4.RELEASE:test
+[INFO]    +- com.jayway.jsonpath:json-path:jar:2.4.0:test
+[INFO]    |  +- net.minidev:json-smart:jar:2.3:test
+[INFO]    |  |  \- net.minidev:accessors-smart:jar:1.2:test
+[INFO]    |  |     \- org.ow2.asm:asm:jar:5.0.4:test
+[INFO]    |  \- org.slf4j:slf4j-api:jar:1.7.25:compile
+[INFO]    +- junit:junit:jar:4.12:test
+[INFO]    +- org.assertj:assertj-core:jar:3.9.1:test
+[INFO]    +- org.mockito:mockito-core:jar:2.15.0:test
+[INFO]    |  +- net.bytebuddy:byte-buddy:jar:1.7.11:test
+[INFO]    |  +- net.bytebuddy:byte-buddy-agent:jar:1.7.11:test
+[INFO]    |  \- org.objenesis:objenesis:jar:2.6:test
+[INFO]    +- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO]    +- org.hamcrest:hamcrest-library:jar:1.3:test
+[INFO]    +- org.skyscreamer:jsonassert:jar:1.5.0:test
+[INFO]    |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO]    +- org.springframework:spring-core:jar:5.0.8.RELEASE:compile
+[INFO]    |  \- org.springframework:spring-jcl:jar:5.0.8.RELEASE:compile
+[INFO]    +- org.springframework:spring-test:jar:5.0.8.RELEASE:test
+[INFO]    \- org.xmlunit:xmlunit-core:jar:2.5.1:test
+[INFO] 
+[INFO] ------------------< com.ailiving.iot:servicehub-sal >-------------------
+[INFO] Building servicehub-sal 1.0.0-SNAPSHOT                             [3/8]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.0.2:tree (default-cli) @ servicehub-sal ---
+[INFO] com.ailiving.iot:servicehub-sal:jar:1.0.0-SNAPSHOT
+[INFO] +- com.ailiving.iot:iot-common:jar:1.0.0-SNAPSHOT:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-web-services:jar:2.0.4.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:2.0.4.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot:jar:2.0.4.RELEASE:compile
+[INFO] |  |  |  \- org.springframework:spring-context:jar:5.0.8.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.0.4.RELEASE:compile
+[INFO] |  |  |  +- ch.qos.logback:logback-classic:jar:1.2.3:compile
+[INFO] |  |  |  |  \- ch.qos.logback:logback-core:jar:1.2.3:compile
+[INFO] |  |  |  +- org.apache.logging.log4j:log4j-to-slf4j:jar:2.10.0:compile
+[INFO] |  |  |  |  \- org.apache.logging.log4j:log4j-api:jar:2.10.0:compile
+[INFO] |  |  |  \- org.slf4j:jul-to-slf4j:jar:1.7.25:compile
+[INFO] |  |  +- javax.annotation:javax.annotation-api:jar:1.3.2:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.19:runtime
+[INFO] |  +- org.springframework.boot:spring-boot-starter-web:jar:2.0.4.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-json:jar:2.0.4.RELEASE:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.9.6:compile
+[INFO] |  |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0:compile
+[INFO] |  |  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.9.6:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.9.6:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.6:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.9.6:compile
+[INFO] |  |  +- org.hibernate.validator:hibernate-validator:jar:6.0.11.Final:compile
+[INFO] |  |  |  +- javax.validation:validation-api:jar:2.0.1.Final:compile
+[INFO] |  |  |  +- org.jboss.logging:jboss-logging:jar:3.3.2.Final:compile
+[INFO] |  |  |  \- com.fasterxml:classmate:jar:1.3.4:compile
+[INFO] |  |  +- org.springframework:spring-web:jar:5.0.8.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-webmvc:jar:5.0.8.RELEASE:compile
+[INFO] |  |     \- org.springframework:spring-expression:jar:5.0.8.RELEASE:compile
+[INFO] |  +- org.springframework:spring-oxm:jar:5.0.8.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-beans:jar:5.0.8.RELEASE:compile
+[INFO] |  \- org.springframework.ws:spring-ws-core:jar:3.0.3.RELEASE:compile
+[INFO] |     +- org.springframework.ws:spring-xml:jar:3.0.3.RELEASE:compile
+[INFO] |     +- org.springframework:spring-aop:jar:5.0.8.RELEASE:compile
+[INFO] |     \- commons-io:commons-io:jar:2.5:compile
+[INFO] \- org.springframework.boot:spring-boot-starter-test:jar:2.0.4.RELEASE:test
+[INFO]    +- org.springframework.boot:spring-boot-test:jar:2.0.4.RELEASE:test
+[INFO]    +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.0.4.RELEASE:test
+[INFO]    +- com.jayway.jsonpath:json-path:jar:2.4.0:test
+[INFO]    |  +- net.minidev:json-smart:jar:2.3:test
+[INFO]    |  |  \- net.minidev:accessors-smart:jar:1.2:test
+[INFO]    |  |     \- org.ow2.asm:asm:jar:5.0.4:test
+[INFO]    |  \- org.slf4j:slf4j-api:jar:1.7.25:compile
+[INFO]    +- junit:junit:jar:4.12:test
+[INFO]    +- org.assertj:assertj-core:jar:3.9.1:test
+[INFO]    +- org.mockito:mockito-core:jar:2.15.0:test
+[INFO]    |  +- net.bytebuddy:byte-buddy:jar:1.7.11:test
+[INFO]    |  +- net.bytebuddy:byte-buddy-agent:jar:1.7.11:test
+[INFO]    |  \- org.objenesis:objenesis:jar:2.6:test
+[INFO]    +- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO]    +- org.hamcrest:hamcrest-library:jar:1.3:test
+[INFO]    +- org.skyscreamer:jsonassert:jar:1.5.0:test
+[INFO]    |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO]    +- org.springframework:spring-core:jar:5.0.8.RELEASE:compile
+[INFO]    |  \- org.springframework:spring-jcl:jar:5.0.8.RELEASE:compile
+[INFO]    +- org.springframework:spring-test:jar:5.0.8.RELEASE:test
+[INFO]    \- org.xmlunit:xmlunit-core:jar:2.5.1:test
+[INFO] 
+[INFO] ------------------< com.ailiving.iot:servicehub-api >-------------------
+[INFO] Building servicehub-api 1.0.0-SNAPSHOT                             [4/8]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.0.2:tree (default-cli) @ servicehub-api ---
+[INFO] com.ailiving.iot:servicehub-api:jar:1.0.0-SNAPSHOT
+[INFO] +- org.springframework.boot:spring-boot-starter-web-services:jar:2.0.4.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:2.0.4.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot:jar:2.0.4.RELEASE:compile
+[INFO] |  |  |  \- org.springframework:spring-context:jar:5.0.8.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.0.4.RELEASE:compile
+[INFO] |  |  |  +- ch.qos.logback:logback-classic:jar:1.2.3:compile
+[INFO] |  |  |  |  \- ch.qos.logback:logback-core:jar:1.2.3:compile
+[INFO] |  |  |  +- org.apache.logging.log4j:log4j-to-slf4j:jar:2.10.0:compile
+[INFO] |  |  |  |  \- org.apache.logging.log4j:log4j-api:jar:2.10.0:compile
+[INFO] |  |  |  \- org.slf4j:jul-to-slf4j:jar:1.7.25:compile
+[INFO] |  |  +- javax.annotation:javax.annotation-api:jar:1.3.2:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.19:runtime
+[INFO] |  +- org.springframework.boot:spring-boot-starter-web:jar:2.0.4.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-json:jar:2.0.4.RELEASE:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.9.6:compile
+[INFO] |  |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0:compile
+[INFO] |  |  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.9.6:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.9.6:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.6:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.9.6:compile
+[INFO] |  |  +- org.hibernate.validator:hibernate-validator:jar:6.0.11.Final:compile
+[INFO] |  |  |  +- javax.validation:validation-api:jar:2.0.1.Final:compile
+[INFO] |  |  |  +- org.jboss.logging:jboss-logging:jar:3.3.2.Final:compile
+[INFO] |  |  |  \- com.fasterxml:classmate:jar:1.3.4:compile
+[INFO] |  |  +- org.springframework:spring-web:jar:5.0.8.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-webmvc:jar:5.0.8.RELEASE:compile
+[INFO] |  |     \- org.springframework:spring-expression:jar:5.0.8.RELEASE:compile
+[INFO] |  +- org.springframework:spring-oxm:jar:5.0.8.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-beans:jar:5.0.8.RELEASE:compile
+[INFO] |  \- org.springframework.ws:spring-ws-core:jar:3.0.3.RELEASE:compile
+[INFO] |     +- org.springframework.ws:spring-xml:jar:3.0.3.RELEASE:compile
+[INFO] |     +- org.springframework:spring-aop:jar:5.0.8.RELEASE:compile
+[INFO] |     \- commons-io:commons-io:jar:2.5:compile
+[INFO] \- org.springframework.boot:spring-boot-starter-test:jar:2.0.4.RELEASE:test
+[INFO]    +- org.springframework.boot:spring-boot-test:jar:2.0.4.RELEASE:test
+[INFO]    +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.0.4.RELEASE:test
+[INFO]    +- com.jayway.jsonpath:json-path:jar:2.4.0:test
+[INFO]    |  +- net.minidev:json-smart:jar:2.3:test
+[INFO]    |  |  \- net.minidev:accessors-smart:jar:1.2:test
+[INFO]    |  |     \- org.ow2.asm:asm:jar:5.0.4:test
+[INFO]    |  \- org.slf4j:slf4j-api:jar:1.7.25:compile
+[INFO]    +- junit:junit:jar:4.12:test
+[INFO]    +- org.assertj:assertj-core:jar:3.9.1:test
+[INFO]    +- org.mockito:mockito-core:jar:2.15.0:test
+[INFO]    |  +- net.bytebuddy:byte-buddy:jar:1.7.11:test
+[INFO]    |  +- net.bytebuddy:byte-buddy-agent:jar:1.7.11:test
+[INFO]    |  \- org.objenesis:objenesis:jar:2.6:test
+[INFO]    +- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO]    +- org.hamcrest:hamcrest-library:jar:1.3:test
+[INFO]    +- org.skyscreamer:jsonassert:jar:1.5.0:test
+[INFO]    |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO]    +- org.springframework:spring-core:jar:5.0.8.RELEASE:compile
+[INFO]    |  \- org.springframework:spring-jcl:jar:5.0.8.RELEASE:compile
+[INFO]    +- org.springframework:spring-test:jar:5.0.8.RELEASE:test
+[INFO]    \- org.xmlunit:xmlunit-core:jar:2.5.1:test
+[INFO] 
+[INFO] ---------------< com.ailiving.iot:servicehub-component >----------------
+[INFO] Building servicehub-component 1.0.0-SNAPSHOT                       [5/8]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.0.2:tree (default-cli) @ servicehub-component ---
+[INFO] com.ailiving.iot:servicehub-component:jar:1.0.0-SNAPSHOT
+[INFO] +- com.ailiving.iot:servicehub-dal:jar:1.0.0-SNAPSHOT:compile
+[INFO] |  \- org.mybatis.spring.boot:mybatis-spring-boot-starter:jar:1.1.1:compile
+[INFO] |     \- org.mybatis.spring.boot:mybatis-spring-boot-autoconfigure:jar:1.1.1:compile
+[INFO] |        +- org.mybatis:mybatis:jar:3.4.0:compile
+[INFO] |        +- org.mybatis:mybatis-spring:jar:1.3.0:compile
+[INFO] |        \- org.springframework.boot:spring-boot-starter-jdbc:jar:2.0.4.RELEASE:compile
+[INFO] |           +- com.zaxxer:HikariCP:jar:2.7.9:compile
+[INFO] |           \- org.springframework:spring-jdbc:jar:5.0.8.RELEASE:compile
+[INFO] |              \- org.springframework:spring-tx:jar:5.0.8.RELEASE:compile
+[INFO] +- com.ailiving.iot:servicehub-sal:jar:1.0.0-SNAPSHOT:compile
+[INFO] |  \- com.ailiving.iot:iot-common:jar:1.0.0-SNAPSHOT:compile
+[INFO] +- com.ailiving.iot:servicehub-api:jar:1.0.0-SNAPSHOT:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-web-services:jar:2.0.4.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:2.0.4.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot:jar:2.0.4.RELEASE:compile
+[INFO] |  |  |  \- org.springframework:spring-context:jar:5.0.8.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.0.4.RELEASE:compile
+[INFO] |  |  |  +- ch.qos.logback:logback-classic:jar:1.2.3:compile
+[INFO] |  |  |  |  \- ch.qos.logback:logback-core:jar:1.2.3:compile
+[INFO] |  |  |  +- org.apache.logging.log4j:log4j-to-slf4j:jar:2.10.0:compile
+[INFO] |  |  |  |  \- org.apache.logging.log4j:log4j-api:jar:2.10.0:compile
+[INFO] |  |  |  \- org.slf4j:jul-to-slf4j:jar:1.7.25:compile
+[INFO] |  |  +- javax.annotation:javax.annotation-api:jar:1.3.2:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.19:runtime
+[INFO] |  +- org.springframework.boot:spring-boot-starter-web:jar:2.0.4.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-json:jar:2.0.4.RELEASE:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.9.6:compile
+[INFO] |  |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0:compile
+[INFO] |  |  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.9.6:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.9.6:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.6:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.9.6:compile
+[INFO] |  |  +- org.hibernate.validator:hibernate-validator:jar:6.0.11.Final:compile
+[INFO] |  |  |  +- javax.validation:validation-api:jar:2.0.1.Final:compile
+[INFO] |  |  |  +- org.jboss.logging:jboss-logging:jar:3.3.2.Final:compile
+[INFO] |  |  |  \- com.fasterxml:classmate:jar:1.3.4:compile
+[INFO] |  |  +- org.springframework:spring-web:jar:5.0.8.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-webmvc:jar:5.0.8.RELEASE:compile
+[INFO] |  |     \- org.springframework:spring-expression:jar:5.0.8.RELEASE:compile
+[INFO] |  +- org.springframework:spring-oxm:jar:5.0.8.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-beans:jar:5.0.8.RELEASE:compile
+[INFO] |  \- org.springframework.ws:spring-ws-core:jar:3.0.3.RELEASE:compile
+[INFO] |     +- org.springframework.ws:spring-xml:jar:3.0.3.RELEASE:compile
+[INFO] |     +- org.springframework:spring-aop:jar:5.0.8.RELEASE:compile
+[INFO] |     \- commons-io:commons-io:jar:2.5:compile
+[INFO] \- org.springframework.boot:spring-boot-starter-test:jar:2.0.4.RELEASE:test
+[INFO]    +- org.springframework.boot:spring-boot-test:jar:2.0.4.RELEASE:test
+[INFO]    +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.0.4.RELEASE:test
+[INFO]    +- com.jayway.jsonpath:json-path:jar:2.4.0:test
+[INFO]    |  +- net.minidev:json-smart:jar:2.3:test
+[INFO]    |  |  \- net.minidev:accessors-smart:jar:1.2:test
+[INFO]    |  |     \- org.ow2.asm:asm:jar:5.0.4:test
+[INFO]    |  \- org.slf4j:slf4j-api:jar:1.7.25:compile
+[INFO]    +- junit:junit:jar:4.12:test
+[INFO]    +- org.assertj:assertj-core:jar:3.9.1:test
+[INFO]    +- org.mockito:mockito-core:jar:2.15.0:test
+[INFO]    |  +- net.bytebuddy:byte-buddy:jar:1.7.11:test
+[INFO]    |  +- net.bytebuddy:byte-buddy-agent:jar:1.7.11:test
+[INFO]    |  \- org.objenesis:objenesis:jar:2.6:test
+[INFO]    +- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO]    +- org.hamcrest:hamcrest-library:jar:1.3:test
+[INFO]    +- org.skyscreamer:jsonassert:jar:1.5.0:test
+[INFO]    |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO]    +- org.springframework:spring-core:jar:5.0.8.RELEASE:compile
+[INFO]    |  \- org.springframework:spring-jcl:jar:5.0.8.RELEASE:compile
+[INFO]    +- org.springframework:spring-test:jar:5.0.8.RELEASE:test
+[INFO]    \- org.xmlunit:xmlunit-core:jar:2.5.1:test
+[INFO] 
+[INFO] ----------------< com.ailiving.iot:servicehub-service >-----------------
+[INFO] Building servicehub-service 1.0.0-SNAPSHOT                         [6/8]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.0.2:tree (default-cli) @ servicehub-service ---
+[INFO] com.ailiving.iot:servicehub-service:jar:1.0.0-SNAPSHOT
+[INFO] +- com.ailiving.iot:servicehub-component:jar:1.0.0-SNAPSHOT:compile
+[INFO] |  +- com.ailiving.iot:servicehub-dal:jar:1.0.0-SNAPSHOT:compile
+[INFO] |  |  \- org.mybatis.spring.boot:mybatis-spring-boot-starter:jar:1.1.1:compile
+[INFO] |  |     \- org.mybatis.spring.boot:mybatis-spring-boot-autoconfigure:jar:1.1.1:compile
+[INFO] |  |        +- org.mybatis:mybatis:jar:3.4.0:compile
+[INFO] |  |        +- org.mybatis:mybatis-spring:jar:1.3.0:compile
+[INFO] |  |        \- org.springframework.boot:spring-boot-starter-jdbc:jar:2.0.4.RELEASE:compile
+[INFO] |  |           +- com.zaxxer:HikariCP:jar:2.7.9:compile
+[INFO] |  |           \- org.springframework:spring-jdbc:jar:5.0.8.RELEASE:compile
+[INFO] |  |              \- org.springframework:spring-tx:jar:5.0.8.RELEASE:compile
+[INFO] |  \- com.ailiving.iot:servicehub-sal:jar:1.0.0-SNAPSHOT:compile
+[INFO] |     \- com.ailiving.iot:iot-common:jar:1.0.0-SNAPSHOT:compile
+[INFO] +- com.ailiving.iot:servicehub-api:jar:1.0.0-SNAPSHOT:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-web-services:jar:2.0.4.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:2.0.4.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot:jar:2.0.4.RELEASE:compile
+[INFO] |  |  |  \- org.springframework:spring-context:jar:5.0.8.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.0.4.RELEASE:compile
+[INFO] |  |  |  +- ch.qos.logback:logback-classic:jar:1.2.3:compile
+[INFO] |  |  |  |  \- ch.qos.logback:logback-core:jar:1.2.3:compile
+[INFO] |  |  |  +- org.apache.logging.log4j:log4j-to-slf4j:jar:2.10.0:compile
+[INFO] |  |  |  |  \- org.apache.logging.log4j:log4j-api:jar:2.10.0:compile
+[INFO] |  |  |  \- org.slf4j:jul-to-slf4j:jar:1.7.25:compile
+[INFO] |  |  +- javax.annotation:javax.annotation-api:jar:1.3.2:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.19:runtime
+[INFO] |  +- org.springframework.boot:spring-boot-starter-web:jar:2.0.4.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-json:jar:2.0.4.RELEASE:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.9.6:compile
+[INFO] |  |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0:compile
+[INFO] |  |  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.9.6:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.9.6:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.6:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.9.6:compile
+[INFO] |  |  +- org.hibernate.validator:hibernate-validator:jar:6.0.11.Final:compile
+[INFO] |  |  |  +- javax.validation:validation-api:jar:2.0.1.Final:compile
+[INFO] |  |  |  +- org.jboss.logging:jboss-logging:jar:3.3.2.Final:compile
+[INFO] |  |  |  \- com.fasterxml:classmate:jar:1.3.4:compile
+[INFO] |  |  +- org.springframework:spring-web:jar:5.0.8.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-webmvc:jar:5.0.8.RELEASE:compile
+[INFO] |  |     \- org.springframework:spring-expression:jar:5.0.8.RELEASE:compile
+[INFO] |  +- org.springframework:spring-oxm:jar:5.0.8.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-beans:jar:5.0.8.RELEASE:compile
+[INFO] |  \- org.springframework.ws:spring-ws-core:jar:3.0.3.RELEASE:compile
+[INFO] |     +- org.springframework.ws:spring-xml:jar:3.0.3.RELEASE:compile
+[INFO] |     +- org.springframework:spring-aop:jar:5.0.8.RELEASE:compile
+[INFO] |     \- commons-io:commons-io:jar:2.5:compile
+[INFO] \- org.springframework.boot:spring-boot-starter-test:jar:2.0.4.RELEASE:test
+[INFO]    +- org.springframework.boot:spring-boot-test:jar:2.0.4.RELEASE:test
+[INFO]    +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.0.4.RELEASE:test
+[INFO]    +- com.jayway.jsonpath:json-path:jar:2.4.0:test
+[INFO]    |  +- net.minidev:json-smart:jar:2.3:test
+[INFO]    |  |  \- net.minidev:accessors-smart:jar:1.2:test
+[INFO]    |  |     \- org.ow2.asm:asm:jar:5.0.4:test
+[INFO]    |  \- org.slf4j:slf4j-api:jar:1.7.25:compile
+[INFO]    +- junit:junit:jar:4.12:test
+[INFO]    +- org.assertj:assertj-core:jar:3.9.1:test
+[INFO]    +- org.mockito:mockito-core:jar:2.15.0:test
+[INFO]    |  +- net.bytebuddy:byte-buddy:jar:1.7.11:test
+[INFO]    |  +- net.bytebuddy:byte-buddy-agent:jar:1.7.11:test
+[INFO]    |  \- org.objenesis:objenesis:jar:2.6:test
+[INFO]    +- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO]    +- org.hamcrest:hamcrest-library:jar:1.3:test
+[INFO]    +- org.skyscreamer:jsonassert:jar:1.5.0:test
+[INFO]    |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO]    +- org.springframework:spring-core:jar:5.0.8.RELEASE:compile
+[INFO]    |  \- org.springframework:spring-jcl:jar:5.0.8.RELEASE:compile
+[INFO]    +- org.springframework:spring-test:jar:5.0.8.RELEASE:test
+[INFO]    \- org.xmlunit:xmlunit-core:jar:2.5.1:test
+[INFO] 
+[INFO] -----------------< com.ailiving.iot:servicehub-common >-----------------
+[INFO] Building servicehub-common 1.0.0-SNAPSHOT                          [7/8]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.0.2:tree (default-cli) @ servicehub-common ---
+[INFO] com.ailiving.iot:servicehub-common:jar:1.0.0-SNAPSHOT
+[INFO] +- com.ailiving.iot:iot-common:jar:1.0.0-SNAPSHOT:compile
+[INFO] +- com.alibaba:druid:jar:1.1.9:compile
+[INFO] +- mysql:mysql-connector-java:jar:5.1.18:compile
+[INFO] +- org.mybatis.spring.boot:mybatis-spring-boot-starter:jar:1.1.1:compile
+[INFO] |  \- org.mybatis.spring.boot:mybatis-spring-boot-autoconfigure:jar:1.1.1:compile
+[INFO] |     +- org.mybatis:mybatis:jar:3.4.0:compile
+[INFO] |     +- org.mybatis:mybatis-spring:jar:1.3.0:compile
+[INFO] |     +- org.springframework.boot:spring-boot:jar:2.0.4.RELEASE:compile
+[INFO] |     |  \- org.springframework:spring-context:jar:5.0.8.RELEASE:compile
+[INFO] |     \- org.springframework.boot:spring-boot-starter-jdbc:jar:2.0.4.RELEASE:compile
+[INFO] |        +- com.zaxxer:HikariCP:jar:2.7.9:compile
+[INFO] |        \- org.springframework:spring-jdbc:jar:5.0.8.RELEASE:compile
+[INFO] |           \- org.springframework:spring-tx:jar:5.0.8.RELEASE:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-web-services:jar:2.0.4.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:2.0.4.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.0.4.RELEASE:compile
+[INFO] |  |  |  +- ch.qos.logback:logback-classic:jar:1.2.3:compile
+[INFO] |  |  |  |  \- ch.qos.logback:logback-core:jar:1.2.3:compile
+[INFO] |  |  |  +- org.apache.logging.log4j:log4j-to-slf4j:jar:2.10.0:compile
+[INFO] |  |  |  |  \- org.apache.logging.log4j:log4j-api:jar:2.10.0:compile
+[INFO] |  |  |  \- org.slf4j:jul-to-slf4j:jar:1.7.25:compile
+[INFO] |  |  +- javax.annotation:javax.annotation-api:jar:1.3.2:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.19:runtime
+[INFO] |  +- org.springframework.boot:spring-boot-starter-web:jar:2.0.4.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-json:jar:2.0.4.RELEASE:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.9.6:compile
+[INFO] |  |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0:compile
+[INFO] |  |  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.9.6:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.9.6:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.6:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.9.6:compile
+[INFO] |  |  +- org.hibernate.validator:hibernate-validator:jar:6.0.11.Final:compile
+[INFO] |  |  |  +- javax.validation:validation-api:jar:2.0.1.Final:compile
+[INFO] |  |  |  +- org.jboss.logging:jboss-logging:jar:3.3.2.Final:compile
+[INFO] |  |  |  \- com.fasterxml:classmate:jar:1.3.4:compile
+[INFO] |  |  +- org.springframework:spring-web:jar:5.0.8.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-webmvc:jar:5.0.8.RELEASE:compile
+[INFO] |  |     \- org.springframework:spring-expression:jar:5.0.8.RELEASE:compile
+[INFO] |  +- org.springframework:spring-oxm:jar:5.0.8.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-beans:jar:5.0.8.RELEASE:compile
+[INFO] |  \- org.springframework.ws:spring-ws-core:jar:3.0.3.RELEASE:compile
+[INFO] |     +- org.springframework.ws:spring-xml:jar:3.0.3.RELEASE:compile
+[INFO] |     +- org.springframework:spring-aop:jar:5.0.8.RELEASE:compile
+[INFO] |     \- commons-io:commons-io:jar:2.5:compile
+[INFO] \- org.springframework.boot:spring-boot-starter-test:jar:2.0.4.RELEASE:test
+[INFO]    +- org.springframework.boot:spring-boot-test:jar:2.0.4.RELEASE:test
+[INFO]    +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.0.4.RELEASE:test
+[INFO]    +- com.jayway.jsonpath:json-path:jar:2.4.0:test
+[INFO]    |  +- net.minidev:json-smart:jar:2.3:test
+[INFO]    |  |  \- net.minidev:accessors-smart:jar:1.2:test
+[INFO]    |  |     \- org.ow2.asm:asm:jar:5.0.4:test
+[INFO]    |  \- org.slf4j:slf4j-api:jar:1.7.25:compile
+[INFO]    +- junit:junit:jar:4.12:test
+[INFO]    +- org.assertj:assertj-core:jar:3.9.1:test
+[INFO]    +- org.mockito:mockito-core:jar:2.15.0:test
+[INFO]    |  +- net.bytebuddy:byte-buddy:jar:1.7.11:test
+[INFO]    |  +- net.bytebuddy:byte-buddy-agent:jar:1.7.11:test
+[INFO]    |  \- org.objenesis:objenesis:jar:2.6:test
+[INFO]    +- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO]    +- org.hamcrest:hamcrest-library:jar:1.3:test
+[INFO]    +- org.skyscreamer:jsonassert:jar:1.5.0:test
+[INFO]    |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO]    +- org.springframework:spring-core:jar:5.0.8.RELEASE:compile
+[INFO]    |  \- org.springframework:spring-jcl:jar:5.0.8.RELEASE:compile
+[INFO]    +- org.springframework:spring-test:jar:5.0.8.RELEASE:test
+[INFO]    \- org.xmlunit:xmlunit-core:jar:2.5.1:test
+[INFO] 
+[INFO] ------------------< com.ailiving.iot:servicehub-main >------------------
+[INFO] Building servicehub-main 1.0.0-SNAPSHOT                            [8/8]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.0.2:tree (default-cli) @ servicehub-main ---
+[INFO] com.ailiving.iot:servicehub-main:jar:1.0.0-SNAPSHOT
+[INFO] +- org.mybatis:mybatis-spring:jar:1.3.0:compile
+[INFO] +- com.ailiving.iot:servicehub-api:jar:1.0.0-SNAPSHOT:compile
+[INFO] +- com.ailiving.iot:servicehub-service:jar:1.0.0-SNAPSHOT:compile
+[INFO] |  \- com.ailiving.iot:servicehub-component:jar:1.0.0-SNAPSHOT:compile
+[INFO] |     +- com.ailiving.iot:servicehub-dal:jar:1.0.0-SNAPSHOT:compile
+[INFO] |     |  \- org.mybatis.spring.boot:mybatis-spring-boot-starter:jar:1.1.1:compile
+[INFO] |     |     \- org.mybatis.spring.boot:mybatis-spring-boot-autoconfigure:jar:1.1.1:compile
+[INFO] |     |        +- org.mybatis:mybatis:jar:3.4.0:compile
+[INFO] |     |        \- org.springframework.boot:spring-boot-starter-jdbc:jar:2.0.4.RELEASE:compile
+[INFO] |     |           +- com.zaxxer:HikariCP:jar:2.7.9:compile
+[INFO] |     |           \- org.springframework:spring-jdbc:jar:5.0.8.RELEASE:compile
+[INFO] |     |              \- org.springframework:spring-tx:jar:5.0.8.RELEASE:compile
+[INFO] |     \- com.ailiving.iot:servicehub-sal:jar:1.0.0-SNAPSHOT:compile
+[INFO] |        \- com.ailiving.iot:iot-common:jar:1.0.0-SNAPSHOT:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-web-services:jar:2.0.4.RELEASE:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:2.0.4.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot:jar:2.0.4.RELEASE:compile
+[INFO] |  |  |  \- org.springframework:spring-context:jar:5.0.8.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.0.4.RELEASE:compile
+[INFO] |  |  |  +- ch.qos.logback:logback-classic:jar:1.2.3:compile
+[INFO] |  |  |  |  \- ch.qos.logback:logback-core:jar:1.2.3:compile
+[INFO] |  |  |  +- org.apache.logging.log4j:log4j-to-slf4j:jar:2.10.0:compile
+[INFO] |  |  |  |  \- org.apache.logging.log4j:log4j-api:jar:2.10.0:compile
+[INFO] |  |  |  \- org.slf4j:jul-to-slf4j:jar:1.7.25:compile
+[INFO] |  |  +- javax.annotation:javax.annotation-api:jar:1.3.2:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.19:runtime
+[INFO] |  +- org.springframework.boot:spring-boot-starter-web:jar:2.0.4.RELEASE:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-json:jar:2.0.4.RELEASE:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.9.6:compile
+[INFO] |  |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0:compile
+[INFO] |  |  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.9.6:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.9.6:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.6:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.9.6:compile
+[INFO] |  |  +- org.hibernate.validator:hibernate-validator:jar:6.0.11.Final:compile
+[INFO] |  |  |  +- javax.validation:validation-api:jar:2.0.1.Final:compile
+[INFO] |  |  |  +- org.jboss.logging:jboss-logging:jar:3.3.2.Final:compile
+[INFO] |  |  |  \- com.fasterxml:classmate:jar:1.3.4:compile
+[INFO] |  |  +- org.springframework:spring-web:jar:5.0.8.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-webmvc:jar:5.0.8.RELEASE:compile
+[INFO] |  |     \- org.springframework:spring-expression:jar:5.0.8.RELEASE:compile
+[INFO] |  +- org.springframework:spring-oxm:jar:5.0.8.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-beans:jar:5.0.8.RELEASE:compile
+[INFO] |  \- org.springframework.ws:spring-ws-core:jar:3.0.3.RELEASE:compile
+[INFO] |     +- org.springframework.ws:spring-xml:jar:3.0.3.RELEASE:compile
+[INFO] |     +- org.springframework:spring-aop:jar:5.0.8.RELEASE:compile
+[INFO] |     \- commons-io:commons-io:jar:2.5:compile
+[INFO] \- org.springframework.boot:spring-boot-starter-test:jar:2.0.4.RELEASE:test
+[INFO]    +- org.springframework.boot:spring-boot-test:jar:2.0.4.RELEASE:test
+[INFO]    +- org.springframework.boot:spring-boot-test-autoconfigure:jar:2.0.4.RELEASE:test
+[INFO]    +- com.jayway.jsonpath:json-path:jar:2.4.0:test
+[INFO]    |  +- net.minidev:json-smart:jar:2.3:test
+[INFO]    |  |  \- net.minidev:accessors-smart:jar:1.2:test
+[INFO]    |  |     \- org.ow2.asm:asm:jar:5.0.4:test
+[INFO]    |  \- org.slf4j:slf4j-api:jar:1.7.25:compile
+[INFO]    +- junit:junit:jar:4.12:test
+[INFO]    +- org.assertj:assertj-core:jar:3.9.1:test
+[INFO]    +- org.mockito:mockito-core:jar:2.15.0:test
+[INFO]    |  +- net.bytebuddy:byte-buddy:jar:1.7.11:test
+[INFO]    |  +- net.bytebuddy:byte-buddy-agent:jar:1.7.11:test
+[INFO]    |  \- org.objenesis:objenesis:jar:2.6:test
+[INFO]    +- org.hamcrest:hamcrest-core:jar:1.3:test
+[INFO]    +- org.hamcrest:hamcrest-library:jar:1.3:test
+[INFO]    +- org.skyscreamer:jsonassert:jar:1.5.0:test
+[INFO]    |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO]    +- org.springframework:spring-core:jar:5.0.8.RELEASE:compile
+[INFO]    |  \- org.springframework:spring-jcl:jar:5.0.8.RELEASE:compile
+[INFO]    +- org.springframework:spring-test:jar:5.0.8.RELEASE:test
+[INFO]    \- org.xmlunit:xmlunit-core:jar:2.5.1:test
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] servicehub 1.0.0-SNAPSHOT .......................... SUCCESS [  1.488 s]
+[INFO] servicehub-dal ..................................... SUCCESS [  0.143 s]
+[INFO] servicehub-sal ..................................... SUCCESS [  0.099 s]
+[INFO] servicehub-api ..................................... SUCCESS [  0.077 s]
+[INFO] servicehub-component ............................... SUCCESS [  0.109 s]
+[INFO] servicehub-service ................................. SUCCESS [  0.093 s]
+[INFO] servicehub-common .................................. SUCCESS [  0.077 s]
+[INFO] servicehub-main 1.0.0-SNAPSHOT ..................... SUCCESS [  0.108 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.952 s
+[INFO] Finished at: 2018-09-05T09:46:37+08:00
+[INFO] ------------------------------------------------------------------------
