@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ailiving.iot.servicehub.mapper.CarInfoDAO">
+    <resultMap id="carInfo" type="com.ailiving.iot.servicehub.domain.CarInfo">
+        <result column="id" property="id" />
+        <result column="gmt_create" property="gmtCreate" />
+        <result column="gmt_modified" property="gmtModified" />
+        <result column="plate_number" property="plateNumber" />
+        <result column="serial_number" property="serialNumber" />
+        <result column="device_id" property="deviceId" />
+        <result column="image_path" property="imagePath" />
+        <result column="gear_box_type" property="gearBoxType" />
+        <result column="oil_card_number" property="oilCardNumber" />
+        <result column="oil_card_date" property="oilCardDate" />
+        <result column="brand" property="brand" />
+        <result column="car_model_id" property="carModelId" />
+        <result column="industry_id" property="industryId" />
+        <result column="car_use" property="carUse" />
+        <result column="fuel_tankage" property="fuelTankage" />
+        <result column="chassis_number" property="chassisNumber" />
+        <result column="calibration_ton" property="calibrationTon" />
+        <result column="calibration_base" property="calibrationBase" />
+        <result column="engine_type" property="engineType" />
+        <result column="displacement" property="displacement" />
+        <result column="emissions" property="emissions" />
+        <result column="oil_type" property="oilType" />
+        <result column="product_time" property="productTime" />
+        <result column="is_deleted" property="isDeleted" />
+    </resultMap>
+
+    <sql id="columns">
+        id, gmt_create, gmt_modified, plate_number, serial_number, device_id, image_path, gear_box_type, oil_card_number,
+        oil_card_date, brand, car_model_id, industry_id, car_use, fuel_tankage, chassis_number, calibration_ton,
+        calibration_base, engine_type, displacement, emissions, oil_type, product_time, is_deleted
+    </sql>
+
+    <insert id="add" parameterType="com.ailiving.iot.servicehub.domain.CarInfo">
+        INSERT into
+        car_info(gmt_create, gmt_modified, plate_number, serial_number, device_id, image_path, gear_box_type,
+        oil_card_number, oil_card_date, brand, car_model_id, industry_id, car_use, fuel_tankage, chassis_number,
+        calibration_ton, calibration_base, engine_type, displacement, emissions, oil_type, product_time, is_deleted)
+        VALUES(now(), now(), #{plateNumber}, #{serialNumber}, #{deviceId}, #{imagePath}, #{gearBoxType}, #{oilCardNumber},
+        #{oilCardDate}, #{brand}, #{carModelId}, #{industryId}, #{carUse}, #{fuelTankage}, #{chassisNumber}, #{calibrationTon},
+        #{calibrationBase}, #{engineType}, #{diaplacement}, #{emissions}, #{oilType}, #{productTime}, #{isDeleted})
+    </insert>
+
+    <select id="queryByPlateNumber" resultMap="carInfo">
+        SELECT <include refid="columns" /> FROM car_info WHERE plate_number = #{plateNumber} AND is_deleted = 0
+    </select>
+</mapper>
